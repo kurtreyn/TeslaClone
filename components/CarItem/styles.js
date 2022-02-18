@@ -11,8 +11,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontFamily: 'Open Sans',
-    fontSize: 30,
+    fontSize: 40,
     fontWeight: '500',
   },
   subtitle: {

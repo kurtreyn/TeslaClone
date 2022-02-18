@@ -1,18 +1,24 @@
-import React from 'react'
-import {View, Text, ImageBackground} from 'react-native'
-import styles from './styles'
+import React from 'react';
+import { View, Text, ImageBackground } from 'react-native';
+import StyledButton from '../StyledButton';
+import styles from './styles';
 
 const CarItem = () => {
   return (
     <View style={styles.carContainer}>
-    <ImageBackground source={require('../../assets/images/ModelX.jpeg')} style={styles.image} />
+      <ImageBackground
+        source={require('../../assets/images/ModelX.jpeg')}
+        style={styles.image}
+      />
 
       <View style={styles.titles}>
         <Text styles={styles.title}>Model S</Text>
         <Text styles={styles.subtitle}>Starting at $69,000</Text>
       </View>
+
+      <StyledButton type="primary" />
     </View>
-  )
-}
+  );
+};
 
 export default CarItem;
